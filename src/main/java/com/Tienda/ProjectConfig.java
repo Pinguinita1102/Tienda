@@ -13,11 +13,11 @@ import org.springframework.web.servlet.i18n.LocaleChangeInterceptor;
 import org.springframework.web.servlet.i18n.SessionLocaleResolver;
 
 @Configuration
-public class ProjectConfig implements WebMvcConfigurer{
+public class ProjectConfig implements WebMvcConfigurer {
     /*El siguientes metodos son para icorporar el tema de internacionalizacion en el proyecto*/
     
     @Bean
-    public LocaleResolver localeResolver (){
+    public SessionLocaleResolver localeResolver (){
         var slr = new SessionLocaleResolver();
         slr.setDefaultLocale(Locale.getDefault());
         slr.setLocaleAttributeName("session.current.locale");

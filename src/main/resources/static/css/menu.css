@@ -64,8 +64,8 @@ body {
 .contenido {
     background-color: lavender;
     position: fixed;
-    top: 12%;
-    bottom: 8%;
+    top: 80px;
+    bottom: 20px;
     left: 0;
     width: 100%;
     overflow: auto;
