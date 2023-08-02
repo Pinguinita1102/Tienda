@@ -17,4 +17,7 @@ public interface CategoriaService {
     
     //Se elimina un registro por su IdCategoria
     public void delete(Categoria categoria);
+    
+    //Ejemplo de metodos ampliados
+    public List<Categoria> getPorDescripcion(String descripcion);
 }

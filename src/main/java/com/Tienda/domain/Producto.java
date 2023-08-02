@@ -20,7 +20,6 @@ public class Producto implements Serializable{
     private double precio;
     private int existencias;
     private String rutaImagen;
-
     private boolean activo;​
 
     @ManyToOne​
@@ -31,12 +30,12 @@ public class Producto implements Serializable{
     public Producto() {        ​
     }​
 
-    public Producto(String descripcion, String detalle, double precio, int existencias, String imagen, boolean activo) {​
+    public Producto(String descripcion, String detalle, double precio, int existencias, String rutaImagen, boolean activo , Categoria categoria) {​
         this.descripcion = descripcion;​
         this.detalle = detalle;​
         this.precio = precio;​
         this.existencias = existencias;​
-        this.rutaImagen = imagen;​
+        this.rutaImagen = rutaImagen;​
         this.activo = activo;​
         this.categoria = categoria;
     }​

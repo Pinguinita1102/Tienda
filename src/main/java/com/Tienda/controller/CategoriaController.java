@@ -25,7 +25,8 @@ public class CategoriaController {
     @GetMapping("/listado")
     public String page(Model model) {
         log.info("Consumo del recurso /categoria/listado");
-        List<Categoria> categorias = categoriaService.getCategorias(false);
+        //List<Categoria> categorias = categoriaService.getCategorias(false);
+        List<Categoria> categorias = categoriaService.getPorDescripcion("Celulares");
         model.addAttribute("categorias", categorias);
         model.addAttribute("totalCategorias", categorias.size());
         return "/categoria/listado";
